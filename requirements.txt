@@ -1,2 +1,2 @@
-Flask
-unittest
+Flask==2.3.2
+unittest2==1.1.0
