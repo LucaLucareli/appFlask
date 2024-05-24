@@ -32,4 +32,4 @@ jobs:
 
     - name: Relatorio
       run: |
-         python -m coverage -m report
+         python -m coverage report
