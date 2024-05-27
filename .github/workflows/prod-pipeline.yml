@@ -28,7 +28,7 @@ jobs:
 
     - name: Run test
       run: |
-        python -m coverage run -m app_test 
+        python -m coverage run -m ./app/app_test 
 
     - name: Relatorio
       run: |
