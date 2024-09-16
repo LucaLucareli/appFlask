@@ -61,5 +61,12 @@ jobs:
         api-key: rnd_w74V68Ke8FW8mHRdLycfio1aqMvv
           
 
+    - name: Deploy no EC2 - aws
+      run: |
+            echo "Conectando no EC2"
+            ssh -i ${{secrets.AWS_KEY_G}} ubuntu@ec2-54-92-166-27.compute-1.amazonaws.com
+            cd appFlask/
+            git pull
+            ./executar.sh
 
         
